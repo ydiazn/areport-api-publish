@@ -1,0 +1,13 @@
+import os
+
+
+AREPORT_BROKER_HOST=os.environ.get(
+    'AREPORT_FILE_WATCHER_BROKER_HOST',
+    'localhost'
+)
+AREPORT_BROKER_PORT=os.environ.get(
+    'AREPORT_FILE_WATCHER_BROKER_PORT',
+    '5679'
+)
+AREPORT_BROKER_EXCHANGE=os.environ.get('AREPORT_BROKER_EXCHANGE', 'scraping')
+AREPORT_BROKER_TOPIC_NEW_DATA=os.environ.get('AREPORT_BROKER_EXCHANGE', 'data.new')

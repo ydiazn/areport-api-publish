@@ -1,0 +1,3 @@
+
+class UsupportedMethodException(Exception):
+    pass
